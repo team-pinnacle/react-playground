@@ -1,3 +1,6 @@
+1. Table component https://github.com/team-pinnacle/react-playground/blob/master/src/components/Table/Table.tsx
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
