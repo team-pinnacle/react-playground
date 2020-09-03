@@ -1,0 +1,24 @@
+.table,
+.table-headers,
+.table-body,
+.table-row {
+  display: flex;
+}
+
+.table,
+.table-body {
+  flex-direction: column;
+}
+
+.table-header-cell,
+.table-cell {
+  padding: 8px;
+}
+
+.table-row:nth-child(even) {
+  background: aliceblue;
+}
+
+.table-row:nth-child(odd) {
+  background: whitesmoke;
+}
