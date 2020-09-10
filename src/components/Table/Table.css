@@ -10,9 +10,14 @@
   flex-direction: column;
 }
 
+.table-header-cell {
+  font-weight: bold;
+}
+
 .table-header-cell,
 .table-cell {
   padding: 8px;
+  flex: 1;
 }
 
 .table-row:nth-child(even) {

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import TableComponent, { TableComponentProps, SortOrder, SortOrderType } from './components/Table/Table';
 import useForm from './hooks/useForm';
+import { UsersComponent } from './components/users/users.component';
 
 
 const data = [
@@ -17,7 +18,8 @@ const table1Props: TableComponentProps = {
     {title: 'Rate', index: 'raate'}
   ],
   data: [{fruit: 'Orange', rate: 10}, {fruit: 'Apple', rate: 20}],
-  onEdit: (row) => { alert(JSON.stringify(row)); }
+  onEdit: (row) => { alert(JSON.stringify(row)); },
+  tableClassName: 'fruits-table'
 };
 
 function App() {
@@ -57,7 +59,8 @@ function App() {
     ],
     data: [...data],
     onEdit: (row) => { alert(JSON.stringify(row)); },
-    onSort: sortHandler
+    onSort: sortHandler,
+    tableClassName: 'clients-table'
   });
 
   useEffect(() => {
@@ -73,15 +76,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TableComponent tableProps={tableProps} />
-      <TableComponent tableProps={table1Props} />
-
-      <form>
-        <input name="name" value={form.name} onChange={updateForm} />
-        <input name="email" value={form.email} onChange={updateForm} />
-      </form>
-      
-      {form.name}
+      <UsersComponent />
     </div>
   );
 }

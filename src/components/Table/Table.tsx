@@ -12,6 +12,7 @@ export type TableComponentProps = {
    data: any[];
    onEdit?: (row: any) => void;
    onSort?: (sortOrder: SortOrder) => void;
+   tableClassName?: string;
 };
 
 export enum SortOrderType {
@@ -46,7 +47,7 @@ function TableComponent({tableProps}: TableComponentPropsType) {
     }
   };
 
-  return <div className="table">
+  return <div className={"table " + tableProps.tableClassName}>
     <div className="table-headers">
       {
         tableProps.columns.map((column, i) => <div key={i} className="table-header-cell">
