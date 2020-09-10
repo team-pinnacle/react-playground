@@ -18,6 +18,11 @@ With createSlice (https://redux-toolkit.js.org/api/createSlice) we can have one 
 
 5. Pass store to Provider https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/index.tsx#L20
 
+6. Use value from store with useSelector https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/components/users/users.component.tsx#L26
+
+7. Invoke action with useDispacth https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/components/users/users.component.tsx#L30
+Eg: dispatch(usersSlice.actions.sort);
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
