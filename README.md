@@ -20,7 +20,7 @@ With createSlice (https://redux-toolkit.js.org/api/createSlice) we can have one 
 
 6. Use value from store with useSelector https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/components/users/users.component.tsx#L26
 
-7. Invoke action with useDispacth https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/components/users/users.component.tsx#L30
+7. Invoke action with useDispatch https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/components/users/users.component.tsx#L30 <br/>
 Eg: dispatch(usersSlice.actions.sort);
 
 
