@@ -1,5 +1,23 @@
 1. Table component https://github.com/team-pinnacle/react-playground/blob/master/src/components/Table/Table.tsx
 
+## Redux
+1. Instead of having same data multiple place keep it in single object(store) for entire Application.
+2. Dispatch action to update store.
+3. Reducer will be updating store with the passed value.
+
+## Redux Toolkit
+With createSlice (https://redux-toolkit.js.org/api/createSlice) we can have one object containing    reducers of key, intialState. No need to write boilterplate.
+
+1. Create slice https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/reducers/users.reducer.ts#L26
+
+2. Export reducer from slice https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/reducers/users.reducer.ts#L66
+
+3. Combine all reducers in single object https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/index.tsx#L10
+
+4. Configure store https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/index.tsx#L14
+
+5. Pass store to Provider https://github.com/team-pinnacle/react-redux-toolkit-thunk/blob/master/src/index.tsx#L20
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
